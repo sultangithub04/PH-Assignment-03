@@ -1,15 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 03</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- install daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- install fontawesome -->
+    <script src="https://kit.fontawesome.com/882bf6759f.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        custom: '#ABEF5F'
+
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
+
+<body class="font-manrope">
     <!-- header part -->
-    <header>
+    <header class="container mx-auto">
         <!-- nav section -->
         <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+
+                  <a class="btn btn-ghost text-3xl font-extrabold"><i class="fa-solid fa-arrow-right text-xl -rotate-45 rounded-full w-7 h-7 bg-[#ABEF5F]"></i>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="font-bold"><a>Home</a></li>
+                    <li><a>Services</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-8 pr-10 hidden md:flex">
+                    
+                    <i class="fa-solid fa-cart-shopping border-2 p-2 border-gray-200 rounded-full "></i>
+                    <i class="fa-solid fa-magnifying-glass border-2 p-2 border-gray-200 rounded-full"></i>
+                </div>
+
+                <div class="navbar-end">
+
+                  <a class="btn hidden md:flex rounded-full font-extrabold text-xl bg-[#ABEF5F]">Book Consult<i class="fa-solid fa-arrow-right text-xl -rotate-45 text-white rounded-full w-7 h-7 bg-[#070707]"></i></a>
+                                      <!-- dropdown -->
+                                      <div class="dropdown mr-3 ">
+                                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden border-2 ml-2 border-gray-200 rounded-full ">
+                                          <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="h-5 w-5"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path
+                                              stroke-linecap="round"
+                                              stroke-linejoin="round"
+                                              stroke-width="2"
+                                              d="M4 6h16M4 12h8m-8 6h16" />
+                                          </svg>
+                                        </div>
+                                        <ul
+                                          tabindex="0"
+                                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow mr-4">
+                                          <li><a>Home</a></li>
+                                          <li><a>Services</a></li>
+                                          <li><a>Portfolio</a></li>
+                                          <li><a>Blogs</a></li>
+                                          <li><a>Contact Us</a></li>
+                                        </ul>
+                                      </div>
+                                       <!-- dropdown end-->
+
+                </div>
+            </div>
 
         </nav>
         <!-- banner section -->
@@ -20,23 +102,23 @@
     <!-- main part -->
 
     <main>
-     <!-- section 01 -->
-      <section>
+        <!-- section 01 -->
+        <section>
 
-      </section>
-     <!-- section 02 -->
-     <section>
-        
-     </section>
-     <!-- section 03 -->
-     <section>
-        
-     </section>
-     <!-- section 04 -->
-     <section>
-        
-     </section>
-     <!-- section 05 -->
+        </section>
+        <!-- section 02 -->
+        <section>
+
+        </section>
+        <!-- section 03 -->
+        <section>
+
+        </section>
+        <!-- section 04 -->
+        <section>
+
+        </section>
+        <!-- section 05 -->
 
     </main>
     <!-- footer part -->
@@ -44,4 +126,5 @@
 
     </footer>
 </body>
+
 </html>
